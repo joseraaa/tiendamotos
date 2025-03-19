@@ -1,0 +1,199 @@
+/* Estilo general para la tienda de motos deportivas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+    color: #222;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffcc00;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+.catalogo {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.catalogo h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.producto p {
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+.producto button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #c70039;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparacion {
+    text-align: center;
+    padding: 50px 0;
+    color: #000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+
+.comparacion h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.comparacion-form {
+    margin-bottom: 30px;
+}
+
+.comparacion-form select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.detalle-comparacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.detalle {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.detalle img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+}
+
+.comparacion-img {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.comparacion-img.resaltar {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+}
+.banner {
+    background-image: url('imagenes/super.jpg'); /* Verifica que la ruta sea correcta */
+    background-size: cover; /* Llena todo el espacio, pero puede recortar */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Ajusta según sea necesario */
+    width: 100%;
+}
+.banner {   
+    color: #fff;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+
