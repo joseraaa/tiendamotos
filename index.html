@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Motos Deportivas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="comparacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tienda Motos Deportivas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#comparacion">Comparación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-texto">
+            <h1>Bienvenidos a la Tienda de Motos Deportivas</h1>
+            <p>Las mejores motos deportivas al mejor precio.</p>
+        </div>
+    </section>
+    <section id="comparacion" class="comparacion">
+        <div class="container">
+            <h2>Comparación de Modelos</h2>
+            <div class="comparacion-form">
+                <select id="modelo1" onchange="actualizarComparacion()">
+                    <option value="moto1">Yamaha YZF-R15 V4</option>
+                    <option value="moto2">Kawasaki NINJA® ZX™-10R</option>
+                    <option value="moto3">Suzuki GSX-R600 2025</option>
+                </select>
+                <select id="modelo2" onchange="actualizarComparacion()">
+                    <option value="moto1">Yamaha YZF-R15 V4</option>
+                    <option value="moto2">Kawasaki NINJA® ZX™-10R</option>
+                    <option value="moto3">Suzuki GSX-R600 2025</option>
+                </select>
+            </div>
+
+            <div id="detalle-comparacion" class="detalle-comparacion">
+                <div id="detalle1" class="detalle">
+                    <img src="imagenes/yamaha.png" class="comparacion-img" alt="Yamaha YZF-R15 V4">
+                    <h3>Yamaha YZF-R15 V4</h3>
+                    <p>Motocicleta deportiva ligera con un motor de 155 cc, ideal para pilotos que buscan agilidad y velocidad.</p>
+                    <p><strong>Especificaciones:</strong> Motor de 155 cc, 18.6 hp, velocidad máxima de 136 km/h, peso de 142 kg.</p>
+                </div>
+                <div id="detalle2" class="detalle">
+                    <img src="imagenes/ninja.png" class="comparacion-img" alt="Kawasaki NINJA® ZX™-10R">
+                    <h3>Kawasaki NINJA® ZX™-10R</h3>
+                    <p>Con la última tecnología en rendimiento, esta motocicleta está diseñada para los entusiastas del motociclismo de alto rendimiento y la velocidad en pista.</p>
+                    <p><strong>Especificaciones:</strong> Motor de 998 cc, 200 hp, velocidad máxima de 299 km/h, peso de 207 kg.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
