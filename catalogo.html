@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Motos y Accesorios</title>
+    <link rel="stylesheet" href="esilo.css">
+    <script src="comparacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Motos y Accesorios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="garaje" id="garaje">
+            <h2>Garaje Virtual</h2>
+        </section>
+        <!-- Catálogo de Accesorios -->
+        <section class="catalogo">
+            <h2>Accesorios para Motos</h2>
+            <div class="productos">
+                <article class="producto">
+                    <img src="imagenes/casco.jpg" alt="Casco para moto">
+                    <h3>Casco Integral</h3>
+                    <p>Casco de alta resistencia con visera anti-rayaduras.</p>
+                    <span class="precio">$1,500 MXN</span>
+                    <button onclick="agregarAlGaraje('Casco Integral', 'imagenes/casco.jpg')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/guantes.jpg" alt="Guantes para moto">
+                    <h3>Guantes de Protección</h3>
+                    <p>Guantes de cuero reforzado para mejor agarre y seguridad.</p>
+                    <span class="precio">$800 MXN</span>
+                    <button onclick="agregarAlGaraje('Guantes de Protección', 'imagenes/guantes.jpg')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/chaqueta.jpg" alt="Chaqueta para moto">
+                    <h3>Chaqueta de Seguridad</h3>
+                    <p>Chaqueta resistente a impactos y condiciones climáticas extremas.</p>
+                    <span class="precio">$2,300 MXN</span>
+                    <button onclick="agregarAlGaraje('Chaqueta de Seguridad', 'imagenes/chaqueta.jpg')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/topcase.jpg" alt="Top case para moto">
+                    <h3>Top Case</h3>
+                    <p>Baúl trasero espacioso con cerradura de seguridad.</p>
+                    <span class="precio">$1,200 MXN</span>
+                    <button onclick="agregarAlGaraje('Top Case', 'imagenes/topcase.jpg')">Agregar al Garaje</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Catálogo de Motos -->
+        <section class="catalogo">
+            <h2>Motos</h2>
+            <div class="productos">
+                <article class="producto">
+                    <img src="imagenes/yamaha.png" alt="Moto deportiva">
+                    <h3>Yamaha YZF-R15 V4</h3>
+                    <p>Motocicleta deportiva ligera</p>
+                    <span class="precio">$85,000 MXN</span>
+                    <button onclick="agregarAlGaraje('Yamaha YZF-R15 V4', 'imagenes/yamaha.png')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/ninja.png" alt="Moto touring">
+                    <h3>Kawasaki NINJA® ZX™-10R</h3>
+                    <p>Con la última tecnología en rendimiento.</p>
+                    <span class="precio">$120,000 MXN</span>
+                    <button onclick="agregarAlGaraje('Kawasaki NINJA® ZX™-10R', 'imagenes/ninja.png')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/suzu.png" alt="Moto scooter">
+                    <h3>Suzuki GSX-R600 2025</h3>
+                    <p>Ideal para quienes buscan una moto potente y ágil.</p>
+                    <span class="precio">$45,000 MXN</span>
+                    <button onclick="agregarAlGaraje('Suzuki GSX-R600 2025', 'imagenes/suzu.png')">Agregar al Garaje</button>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/r6.jpg" alt="Moto doble propósito">
+                    <h3>YAMAHA R6 RACE</h3>
+                    <p>R6 RACE exclusiva para circuitos.</p>
+                    <span class="precio">$14.299,00 </span>
+                    <button onclick="agregarAlGaraje('YAMAHA R6 RACE', 'imagenes/r6.jpg')">Agregar al Garaje</button>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

@@ -49,5 +49,32 @@ function actualizarDetalle(id, datos) {
     `;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        let loader = document.getElementById("loader");
+        loader.classList.add("hidden");
+
+        // Eliminar el loader completamente después de la transición
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 1000); // Espera la transición antes de ocultarlo
+    }, 3000); // Ocultar después de 3 segundos
+});
+
+function agregarAlGaraje(nombre, imagen) {
+    let garaje = document.getElementById("garaje");
+    let item = document.createElement("div");
+    item.classList.add("item-garaje");
+    item.innerHTML = `<img src="${imagen}" alt="${nombre}" width="100"> 
+                      <button class='eliminar' onclick='eliminarDelGaraje(this)'>X</button>`;
+    garaje.appendChild(item);
+}
+
+function eliminarDelGaraje(boton) {
+    boton.parentElement.remove();
+}
+
+
+
 // Ejecutar la función al cargar la página
 window.onload = actualizarComparacion;
